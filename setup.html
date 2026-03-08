@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>初期設定・シートの見かた - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; 初期設定・シートの見かた</div>
+
+  <div class="content">
+    <h2>1. 初期設定・シートの見かた</h2>
+
+    <p>
+      「とうろくん」は、Google スプレッドシートの中で動くツールです。<br>
+      学校行事・出張・日直など、日々の業務に必要な情報を管理できます。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>スプレッドシートを開く</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      Google ドライブから、「とうろくん」のスプレッドシートを開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      画面の上のほうに <strong>「とうろくんメニュー」</strong> という項目が表示されていれば準備完了です。
+    </div>
+
+    <div class="note">
+      初めてスプレッドシートを開いたときは、「とうろくんメニュー」が表示されるまで数秒かかることがあります。<br>
+      しばらく待っても表示されない場合は、ページを再読み込み（ブラウザの更新ボタン）してみてください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>シートの構成</h3>
+
+    <p>画面の下のほうに、いくつかのタブ（シート）が並んでいます。それぞれの役割は以下のとおりです。</p>
+
+    <table>
+      <tr><th>シート名</th><th>役割</th><th>触る頻度</th></tr>
+      <tr>
+        <td><strong>マスターシート</strong></td>
+        <td>年度や日付など、全体の基本情報が入っています。<br>A1セルに「年度」の数字（例：2026）が入っています。</td>
+        <td>年度初めに1回</td>
+      </tr>
+      <tr>
+        <td><strong>Events</strong></td>
+        <td>学校行事のデータが入るシートです。<br>サイドバーから登録すると、ここに自動で追加されます。</td>
+        <td>普段はサイドバーから操作</td>
+      </tr>
+      <tr>
+        <td><strong>trip</strong></td>
+        <td>出張のデータが入るシートです。<br>サイドバーから登録すると、ここに自動で追加されます。</td>
+        <td>普段はサイドバーから操作</td>
+      </tr>
+      <tr>
+        <td><strong>staff</strong></td>
+        <td>職員名簿と日直の割り振りに使うシートです。</td>
+        <td>職員の追加・変更時</td>
+      </tr>
+    </table>
+
+    <div class="tip">
+      普段の操作は「とうろくんメニュー」からサイドバーを開いて行います。<br>
+      シートの中身を直接編集する必要はほとんどありません。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>各シートの列の見かた</h3>
+
+    <h3>Events シート（学校行事）</h3>
+    <table>
+      <tr><th>列</th><th>項目名</th><th>説明</th></tr>
+      <tr><td>A</td><td>ID</td><td>自動でつけられる番号です（触らなくてOK）</td></tr>
+      <tr><td>B</td><td>イベント名</td><td>行事の名前</td></tr>
+      <tr><td>C</td><td>日付</td><td>行事の日付</td></tr>
+      <tr><td>D</td><td>開始時間</td><td>開始時間（空欄でもOK）</td></tr>
+      <tr><td>E</td><td>終了時間</td><td>終了時間（空欄でもOK）</td></tr>
+      <tr><td>F</td><td>年計反映</td><td>年間計画に表示するかどうか</td></tr>
+      <tr><td>G</td><td>保護者向け</td><td>保護者向けの行事かどうか</td></tr>
+      <tr><td>H</td><td>GoogleカレンダーID</td><td>カレンダー連携用（自動）</td></tr>
+      <tr><td>I</td><td>説明・備考</td><td>メモや補足情報（月別ビューの「詳細」列にも表示されます）</td></tr>
+      <tr><td>J</td><td>作成日時</td><td>いつ登録されたか（自動）</td></tr>
+      <tr><td>K</td><td>更新日時</td><td>いつ変更されたか（自動）</td></tr>
+      <tr><td>L</td><td>作成者/編集者</td><td>誰が登録・変更したか（自動）</td></tr>
+      <tr><td>M</td><td>作業セル</td><td>内部処理用（触らなくてOK）</td></tr>
+    </table>
+
+    <h3>trip シート（出張）</h3>
+    <table>
+      <tr><th>列</th><th>項目名</th><th>説明</th></tr>
+      <tr><td>A</td><td>ID</td><td>自動でつけられる番号です（触らなくてOK）</td></tr>
+      <tr><td>B</td><td>イベント名</td><td>出張の名前</td></tr>
+      <tr><td>C</td><td>名前</td><td>出張する職員の名前</td></tr>
+      <tr><td>D</td><td>日付</td><td>出張の日付</td></tr>
+      <tr><td>E</td><td>場所</td><td>出張先</td></tr>
+      <tr><td>F</td><td>開始時間</td><td>開始時間（空欄でもOK）</td></tr>
+      <tr><td>G</td><td>終了時間</td><td>終了時間（空欄でもOK）</td></tr>
+      <tr><td>H</td><td>終日フラグ</td><td>終日出張かどうか</td></tr>
+      <tr><td>I</td><td>GoogleカレンダーID</td><td>カレンダー連携用（自動）</td></tr>
+      <tr><td>J</td><td>説明・備考</td><td>メモや補足情報</td></tr>
+      <tr><td>K</td><td>作成日時</td><td>いつ登録されたか（自動）</td></tr>
+      <tr><td>L</td><td>更新日時</td><td>いつ変更されたか（自動）</td></tr>
+      <tr><td>M</td><td>作成者/編集者</td><td>誰が登録・変更したか（自動）</td></tr>
+    </table>
+
+    <h3>staff シート（日直割り振り）</h3>
+    <table>
+      <tr><th>列</th><th>項目名</th><th>説明</th></tr>
+      <tr><td>A</td><td>在籍職員入力欄</td><td>日直に入る職員の名前を入力します</td></tr>
+      <tr><td>B</td><td>日直なしの日に✅</td><td>チェックを入れると、その日は日直なしになります</td></tr>
+      <tr><td>C</td><td>日付</td><td>マスターシートから自動で入る日付です</td></tr>
+      <tr><td>D</td><td>日直</td><td>割り振りで自動入力される日直担当者名</td></tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>スプレッドシートの初期化（初回のみ）</h3>
+
+    <p>
+      新しいスプレッドシートで「とうろくん」を使い始めるときは、最初に一度だけ「初期化」を行います。<br>
+      これにより、必要なシートと列見出しが自動で作られます。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      一番下にある <strong>「スプレッドシート初期化」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      確認のメッセージが出るので、<strong>「OK」</strong> を押します。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      「初期化が完了しました」と表示されたら完了です。
+    </div>
+
+    <div class="note">
+      すでにデータが入っているシートがある場合、そのシートはそのまま残ります（上書きされません）。<br>
+      この操作は「存在しないシートを新しく作る」だけなので、安心して実行できます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>年度の設定</h3>
+
+    <p>マスターシートのA1セルに、現在の年度の数字を入力しておいてください。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      画面下の <strong>「マスターシート」</strong> タブをクリックして開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>A1セル</strong>（左上の一番最初のセル）に、年度の数字を入力します。<br>
+      例：2026年度なら <strong>2026</strong> と入力
+    </div>
+
+    <div class="tip">
+      この年度の数字は、日直割り振りの月選択リスト（4月〜3月）の計算に使われます。<br>
+      年度が変わったら、この数字も更新してください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>staffシートの準備</h3>
+
+    <p>日直の割り振りを使う場合は、staffシートに職員名を入力しておく必要があります。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      画面下の <strong>「staff」</strong> タブをクリックして開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>A列（在籍職員入力欄）</strong> に、日直に入る職員の名前を上から順番に入力します。<br>
+      この並び順が、日直ローテーションの順番になります。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      日直を割り振りたくない日がある場合は、<strong>B列</strong> にチェック（✅）を入れておきます。
+    </div>
+
+    <div class="page-nav">
+      <a href="index.html">&larr; 目次に戻る</a>
+      <a href="event.html">次へ: 学校行事の登録 &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+</html>

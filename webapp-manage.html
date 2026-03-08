@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>行事・出張の登録と編集 - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-web">
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; 行事・出張の登録と編集</div>
+
+  <div class="content">
+    <h2>9. 行事・出張の登録と編集（Webアプリ版）</h2>
+
+    <p>
+      Webアプリからも、学校行事や出張を登録・編集・削除できます。<br>
+      スプレッドシートを開かなくても、ブラウザ上で操作が完結します。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>新しい学校行事を登録する</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      画面上部の <strong>「➕ 新規イベント登録」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      入力画面が開きます。以下の項目を入力してください。
+    </div>
+
+    <table>
+      <tr><th>項目</th><th>必須</th><th>説明</th></tr>
+      <tr>
+        <td><strong>イベント名</strong></td>
+        <td>必須</td>
+        <td>行事の名前を入力します。<br>例：「入学式」「運動会」</td>
+      </tr>
+      <tr>
+        <td><strong>日付</strong></td>
+        <td>必須</td>
+        <td>行事の日付を選びます。</td>
+      </tr>
+      <tr>
+        <td><strong>開始時間</strong></td>
+        <td>任意</td>
+        <td>開始する時間を入力します。</td>
+      </tr>
+      <tr>
+        <td><strong>終了時間</strong></td>
+        <td>任意</td>
+        <td>終了する時間を入力します。</td>
+      </tr>
+      <tr>
+        <td><strong>年計反映</strong></td>
+        <td>任意</td>
+        <td>チェックを入れると、年間計画の表示対象になります。<br>チェックを入れると開始・終了時間の入力欄が消えます。</td>
+      </tr>
+      <tr>
+        <td><strong>説明・備考</strong></td>
+        <td>任意</td>
+        <td>メモや補足情報を入力します。<br>ここに書いた内容は<strong>月別ビューの「詳細」列にも表示されます</strong>（年間ビューには表示されません）。<br>Googleドライブの資料URLを入れると、📎マークで表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>保護者向け</strong></td>
+        <td>任意</td>
+        <td>チェックを入れると、保護者向けの行事として区別されます。</td>
+      </tr>
+    </table>
+
+    <div class="step">
+      <span class="step-number">3</span>
+      入力が終わったら、<strong>「保存」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      「イベントが登録されました」と表示されたら完了です。画面が自動で更新されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>登録済みの学校行事を編集する</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      編集したい行事の名前をクリックして、<strong>詳細画面</strong>を開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      詳細画面の <strong>「編集」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      編集画面が開きます。変更したい項目を修正してください。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      修正が終わったら、<strong>「保存」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">5</span>
+      画面右上に <strong>「イベントが正常に更新されました」</strong> という通知が表示されたら完了です。<br>
+      編集画面は自動で閉じ、画面が更新されます。
+    </div>
+
+    <div class="tip">
+      カレンダービューでは、行事をマウスでドラッグして別の日に移動させることもできます。<br>
+      日にちだけを変えたい場合は、この方法が一番かんたんです。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>学校行事を削除する</h3>
+
+    <p>削除は <strong>詳細画面</strong> または <strong>編集画面</strong> のどちらからでも行えます。</p>
+
+    <h4>方法1: 詳細画面から削除する（かんたん）</h4>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      削除したい行事の名前をクリックして、<strong>詳細画面</strong>を開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      詳細画面の <strong>赤い「削除」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      <strong>「○○を削除してもよろしいですか？」</strong> という確認メッセージが出ます。<br>
+      よければ「OK」をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      画面右上に通知が表示されたら完了です。
+    </div>
+
+    <h4>方法2: 編集画面から削除する</h4>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      詳細画面で <strong>「編集」ボタン</strong> をクリックして編集画面を開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      編集画面の下にある <strong>赤い「削除」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      確認メッセージで「OK」をクリックすると削除されます。
+    </div>
+
+    <div class="note">
+      削除した行事は元に戻せません。間違えて削除した場合は、もう一度登録し直すか、
+      スプレッドシートの「ファイル」→「変更履歴」から復元してください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>新しい出張を登録する</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      画面上部の <strong>「✈️ 新規出張登録」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      入力画面が開きます。以下の項目を入力してください。
+    </div>
+
+    <table>
+      <tr><th>項目</th><th>必須</th><th>説明</th></tr>
+      <tr>
+        <td><strong>イベント名</strong></td>
+        <td>必須</td>
+        <td>出張の名前を入力します。<br>例：「○○研修会」「教育委員会打合せ」</td>
+      </tr>
+      <tr>
+        <td><strong>名前</strong></td>
+        <td>必須</td>
+        <td>出張する職員の名前を入力します。</td>
+      </tr>
+      <tr>
+        <td><strong>日付</strong></td>
+        <td>必須</td>
+        <td>出張の日付を選びます（初期値は今日の日付です）。</td>
+      </tr>
+      <tr>
+        <td><strong>場所</strong></td>
+        <td>必須</td>
+        <td>出張先の場所を入力します。</td>
+      </tr>
+      <tr>
+        <td><strong>開始時間</strong></td>
+        <td>任意</td>
+        <td>出張の開始時間を入力します。</td>
+      </tr>
+      <tr>
+        <td><strong>終了時間</strong></td>
+        <td>任意</td>
+        <td>出張の終了時間を入力します。</td>
+      </tr>
+      <tr>
+        <td><strong>終日出張</strong></td>
+        <td>任意</td>
+        <td>チェックを入れると、丸一日の出張として記録されます。</td>
+      </tr>
+      <tr>
+        <td><strong>説明・備考</strong></td>
+        <td>任意</td>
+        <td>メモや補足情報を入力します。</td>
+      </tr>
+    </table>
+
+    <div class="step">
+      <span class="step-number">3</span>
+      入力が終わったら、<strong>「保存」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      登録が完了すると、画面が自動で更新されます。
+    </div>
+
+    <div class="tip">
+      「名前」はスタッフ一覧から選ぶ形式です。スプレッドシートの「staff」シートに登録された職員名が表示されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>登録済みの出張を編集する</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      編集したい出張をクリックして、<strong>詳細画面</strong>を開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      詳細画面の <strong>「編集」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      出張編集画面が開きます。イベント名・名前・日付・場所・時間・終日・備考を変更できます。<br>
+      「名前」はスタッフ一覧のプルダウンから選び直せます。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      修正が終わったら、<strong>「保存」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">5</span>
+      画面右上に <strong>「出張が正常に更新されました」</strong> という通知が表示されたら完了です。<br>
+      編集画面は自動で閉じ、画面が更新されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>出張を削除する</h3>
+
+    <p>学校行事と同様に、<strong>詳細画面</strong>または<strong>編集画面</strong>のどちらからでも削除できます。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      削除したい出張をクリックして、<strong>詳細画面</strong>を開きます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>赤い「削除」ボタン</strong> をクリックします（または「編集」→ 編集画面の「削除」でも可）。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      確認メッセージで「OK」をクリックすると削除されます。
+    </div>
+
+    <div class="note">
+      削除した出張は元に戻せません。間違えて削除した場合は、もう一度登録し直すか、
+      スプレッドシートの「ファイル」→「変更履歴」から復元してください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>Googleドライブの資料をリンクする</h3>
+
+    <p>
+      行事や出張の「説明・備考」欄に <strong>GoogleドライブのURL</strong> を入力すると、
+      予定のカードに 📎 マークが表示されます。<br>
+      このマークをクリックすると、リンク先の資料を直接開くことができます。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      Googleドライブで資料ファイルを開き、<strong>共有リンク</strong>をコピーします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      行事や出張の「説明・備考」欄に、コピーしたURLを貼り付けます。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      保存すると、予定のカードに 📎 マークが自動で表示されます。
+    </div>
+
+    <div class="tip">
+      Googleドキュメント、Googleスプレッドシート、Googleスライドなど、<br>
+      Googleドライブ上のファイルであればどれでもリンクできます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>こんなときは？</h3>
+
+    <dl class="qa">
+      <dt>登録ボタンを押しても反応しない</dt>
+      <dd>必須項目（*がついている項目）がすべて入力されているか確認してください。</dd>
+
+      <dt>登録したのに画面に表示されない</dt>
+      <dd>ページを再読み込みしてみてください。表示モードが違う場合は、該当の日付に移動してみてください。</dd>
+
+      <dt>複数の職員の出張をまとめて登録したい</dt>
+      <dd>Webアプリ版では一人ずつの登録になります。まとめて登録したい場合は、スプレッドシート版のサイドバーをお使いください（複数人選択に対応しています）。</dd>
+
+      <dt>間違えて削除してしまった</dt>
+      <dd>スプレッドシートを開いて「ファイル」→「変更履歴」→「変更履歴を表示」から、削除前の状態に戻すことができます。</dd>
+
+      <dt>カレンダーで行事をドラッグして移動したのに反映されない</dt>
+      <dd>通信中にエラーが出た可能性があります。ページを再読み込みして、正しい日付に入っているか確認してください。</dd>
+    </dl>
+
+    <div class="page-nav">
+      <a href="webapp-views.html">&larr; 前へ: 5つの表示モード</a>
+      <a href="index.html">目次に戻る &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+</html>

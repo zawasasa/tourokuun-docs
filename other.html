@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>その他の便利な機能 - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; その他の便利な機能</div>
+
+  <div class="content">
+    <h2>6. その他の便利な機能</h2>
+
+    <p>
+      サイドバーを使った登録機能のほかにも、「とうろくんメニュー」からいくつかの便利な機能を使うことができます。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>イベントを日付順に並べ替え</h3>
+
+    <p>Eventsシート（学校行事）のデータを、日付の順番に並べ替えます。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>「イベントを日付順に並べ替え」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      Eventsシートの行が日付順に整理されます。
+    </div>
+
+    <div class="tip">
+      サイドバーから行事を登録した場合は、登録後に自動で日付順に並び替わります。<br>
+      この機能は、シートを直接編集した場合など、並び順が崩れたときに使ってください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>出張を日付順に並べ替え</h3>
+
+    <p>tripシート（出張）のデータを、日付の順番に並べ替えます。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>「出張を日付順に並べ替え」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      tripシートの行が日付順に整理されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>未設定IDの自動割り当て</h3>
+
+    <p>
+      Eventsシートで、ID（A列）が空欄になっている行に、自動でIDをつけます。<br>
+      CSVから読み込んだデータや、手動で入力したデータでIDが入っていない場合に使います。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>「未設定IDの自動割り当て」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      IDが空欄の行に、自動で番号が入ります。
+    </div>
+
+    <div class="tip">
+      IDは内部管理用の番号です。普段は気にする必要はありません。<br>
+      サイドバーから登録した場合は、IDは最初から自動で入っています。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>スプレッドシート初期化</h3>
+
+    <p>
+      必要なシート（Events、trip、staffなど）が存在しない場合に、自動で作成します。<br>
+      初めて「とうろくん」を使い始めるときに、一度だけ実行してください。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      一番下にある <strong>「スプレッドシート初期化」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      確認のメッセージが出るので <strong>「OK」</strong> を押します。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      必要なシートが作成され、列見出しが自動で入ります。
+    </div>
+
+    <div class="note">
+      すでに存在するシートは上書きされません。安心して実行できます。<br>
+      この操作は「足りないシートを補充する」だけです。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>よくあるトラブルと対処法</h3>
+
+    <dl class="qa">
+      <dt>「とうろくんメニュー」が表示されない</dt>
+      <dd>ブラウザの更新ボタン（またはCtrl + R）でページを再読み込みしてみてください。初回は表示に数秒かかることがあります。</dd>
+
+      <dt>サイドバーが開かない</dt>
+      <dd>ポップアップがブロックされている可能性があります。ブラウザのアドレスバー付近にポップアップブロックの表示が出ていないか確認してください。</dd>
+
+      <dt>「権限が必要です」と表示される</dt>
+      <dd>初めて使うときに表示されることがあります。「許可」をクリックして、Googleアカウントでのアクセスを許可してください。</dd>
+
+      <dt>データが消えてしまった</dt>
+      <dd>Googleスプレッドシートには変更履歴の機能があります。「ファイル」→「変更履歴」→「変更履歴を表示」から、以前の状態に戻すことができます。</dd>
+
+      <dt>動作が遅い</dt>
+      <dd>データ量が多い場合、処理に時間がかかることがあります。「読み込み中」の表示が出ている間は、そのままお待ちください。</dd>
+    </dl>
+
+    <!-- ============================================ -->
+    <h3>お問い合わせ</h3>
+
+    <p>
+      操作でわからないことがあったら、管理者にお問い合わせください。<br>
+      エラーメッセージが出た場合は、画面のスクリーンショットを撮っていただけると、原因の特定がスムーズです。
+    </p>
+
+    <div class="page-nav">
+      <a href="csv.html">&larr; 前へ: CSV管理</a>
+      <a href="webapp.html">次へ: Webアプリの基本操作 &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+</html>

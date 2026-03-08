@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSVデータの書き出し・読み込み - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; CSVデータの書き出し・読み込み</div>
+
+  <div class="content">
+    <h2>5. CSVデータの書き出し・読み込み</h2>
+
+    <p>
+      CSVとは、データをカンマ（,）で区切ったテキストファイルのことです。<br>
+      ExcelやGoogleスプレッドシートで開くことができるので、データのやり取りに便利です。
+    </p>
+    <p>
+      「とうろくん」では、学校行事と出張のデータを <strong>CSVファイルとして書き出したり、CSVファイルから読み込んだり</strong>することができます。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>CSVでできること（全体像）</h3>
+
+    <table>
+      <tr><th>機能</th><th>学校行事</th><th>出張</th></tr>
+      <tr>
+        <td><strong>テンプレート書き出し</strong></td>
+        <td>とうろくんメニュー → イベントCSV管理 → テンプレート書き出し</td>
+        <td>とうろくんメニュー → 出張CSV管理 → テンプレート書き出し</td>
+      </tr>
+      <tr>
+        <td><strong>データ書き出し</strong></td>
+        <td>とうろくんメニュー → イベントCSV管理 → データ書き出し</td>
+        <td>とうろくんメニュー → 出張CSV管理 → データ書き出し</td>
+      </tr>
+      <tr>
+        <td><strong>CSV読み込み</strong></td>
+        <td>とうろくんメニュー → イベントCSV管理 → CSV読み込み</td>
+        <td>とうろくんメニュー → 出張CSV管理 → CSV読み込み</td>
+      </tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>テンプレートを書き出す</h3>
+
+    <p>
+      「テンプレート」とは、データの入力用のひな型ファイルです。<br>
+      列の名前だけが入った空のCSVファイルがダウンロードされるので、Excelなどで開いてデータを入力し、あとから読み込むことができます。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>「イベントCSV管理」</strong>（または「出張CSV管理」）にカーソルを合わせます。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      <strong>「テンプレート書き出し」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      Googleドライブにテンプレートファイルが作成され、ダウンロード用のリンクが表示されます。
+    </div>
+
+    <div class="tip">
+      テンプレートファイルは Google ドライブに保存されます。<br>
+      表示されたリンクをクリックすると、ファイルを開いたりダウンロードしたりできます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>データを書き出す</h3>
+
+    <p>
+      現在スプレッドシートに登録されているデータを、CSVファイルとして書き出します。<br>
+      バックアップや他のソフトでの利用に便利です。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>「イベントCSV管理」</strong>（または「出張CSV管理」）にカーソルを合わせます。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      <strong>「データ書き出し」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      Googleドライブにデータファイルが作成され、ダウンロード用のリンクが表示されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>CSVファイルを読み込む</h3>
+
+    <p>
+      テンプレートに入力したデータや、他のソフトで作成したCSVファイルを、スプレッドシートに読み込みます。<br>
+      大量のデータを一度にまとめて登録したいときに便利です。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      <strong>「イベントCSV管理」</strong>（または「出張CSV管理」）にカーソルを合わせます。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      <strong>「CSV読み込み」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      読み込み用の画面が開きます。CSVファイルを選択してください。
+    </div>
+    <div class="step">
+      <span class="step-number">5</span>
+      データの内容が表示されるので、確認したら <strong>「読み込み実行」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">6</span>
+      読み込みが完了すると、スプレッドシートにデータが追加されます。
+    </div>
+
+    <div class="note">
+      CSVファイルの列の並びは、テンプレートと同じ順番にしてください。<br>
+      列の順番が違うと、正しく読み込めない場合があります。
+    </div>
+
+    <div class="note">
+      すでに同じIDのデータがある場合は、重複として扱われます。<br>
+      新規データ（IDが空）は新しい行として追加されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>CSVの列の内容</h3>
+
+    <h3>学校行事のCSV</h3>
+    <table>
+      <tr><th>列名</th><th>入力する内容</th><th>必須</th></tr>
+      <tr><td>ID</td><td>空欄でOK（自動で入ります）</td><td>-</td></tr>
+      <tr><td>イベント名</td><td>行事の名前</td><td>必須</td></tr>
+      <tr><td>日付</td><td>行事の日付（例：2026-04-07）</td><td>必須</td></tr>
+      <tr><td>開始時間</td><td>開始時間（例：09:00）</td><td>任意</td></tr>
+      <tr><td>終了時間</td><td>終了時間（例：12:00）</td><td>任意</td></tr>
+      <tr><td>年計反映</td><td>TRUE または FALSE</td><td>任意</td></tr>
+      <tr><td>保護者向け</td><td>TRUE または FALSE</td><td>任意</td></tr>
+      <tr><td>GoogleカレンダーID</td><td>空欄でOK</td><td>-</td></tr>
+      <tr><td>説明・備考</td><td>メモや補足</td><td>任意</td></tr>
+    </table>
+
+    <h3>出張のCSV</h3>
+    <table>
+      <tr><th>列名</th><th>入力する内容</th><th>必須</th></tr>
+      <tr><td>ID</td><td>空欄でOK（自動で入ります）</td><td>-</td></tr>
+      <tr><td>イベント名</td><td>出張の名前</td><td>必須</td></tr>
+      <tr><td>名前</td><td>職員の名前</td><td>必須</td></tr>
+      <tr><td>日付</td><td>出張の日付（例：2026-04-07）</td><td>必須</td></tr>
+      <tr><td>場所</td><td>出張先</td><td>必須</td></tr>
+      <tr><td>開始時間</td><td>開始時間（例：09:00）</td><td>任意</td></tr>
+      <tr><td>終了時間</td><td>終了時間（例：17:00）</td><td>任意</td></tr>
+      <tr><td>終日フラグ</td><td>1（終日）または 空欄</td><td>任意</td></tr>
+      <tr><td>GoogleカレンダーID</td><td>空欄でOK</td><td>-</td></tr>
+      <tr><td>説明・備考</td><td>メモや補足</td><td>任意</td></tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>ヘルプファイルの生成</h3>
+
+    <p>
+      CSVの使い方について、より詳しい説明ファイルを作成することもできます。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「とうろくんメニュー」</strong> → <strong>「ヘルプファイル生成」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      Google ドライブにヘルプファイルが作成されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>こんなときは？</h3>
+
+    <dl class="qa">
+      <dt>CSVファイルをExcelで編集したい</dt>
+      <dd>ダウンロードしたCSVファイルをExcelで開けば、表形式で編集できます。保存するときは「CSV形式」で保存してください。</dd>
+
+      <dt>読み込み時にエラーが出る</dt>
+      <dd>CSVファイルの列の順番がテンプレートと合っているか確認してください。また、日付の形式が「2026-04-07」のように「年-月-日」になっているか確認してください。</dd>
+
+      <dt>大量のデータを一度に登録したい</dt>
+      <dd>テンプレートをダウンロードして、Excelなどで一覧を作成してから、CSV読み込みで一括登録するのが効率的です。</dd>
+    </dl>
+
+    <div class="page-nav">
+      <a href="duty.html">&larr; 前へ: 日直の割り振り</a>
+      <a href="other.html">次へ: その他の便利な機能 &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+</html>

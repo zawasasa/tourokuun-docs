@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学校行事の登録 - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; 学校行事の登録</div>
+
+  <div class="content">
+    <h2>2. 学校行事の登録</h2>
+
+    <p>
+      この機能は、学校行事（入学式、運動会、保護者会など）をスプレッドシートに登録するためのものです。<br>
+      画面右側に出てくる入力フォーム（サイドバー）から、かんたんに登録できます。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>登録画面を開く</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      画面の一番上にある <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      出てきたメニューの中から <strong>「イベント登録サイドバー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      少し待つと、画面の右側に入力フォームが表示されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>入力する項目</h3>
+
+    <table>
+      <tr><th>項目</th><th>必須</th><th>説明</th></tr>
+      <tr>
+        <td><strong>イベント名</strong></td>
+        <td>必須</td>
+        <td>行事の名前を入力します。<br>例：「入学式」「保護者会」「避難訓練」</td>
+      </tr>
+      <tr>
+        <td><strong>日付</strong></td>
+        <td>必須</td>
+        <td>行事の日付を選びます。カレンダーが表示されるので、日にちをクリックしてください。</td>
+      </tr>
+      <tr>
+        <td><strong>開始時間</strong></td>
+        <td>任意</td>
+        <td>行事が始まる時間を入力します。わからなければ空欄のままでOKです。</td>
+      </tr>
+      <tr>
+        <td><strong>終了時間</strong></td>
+        <td>任意</td>
+        <td>行事が終わる時間を入力します。わからなければ空欄のままでOKです。</td>
+      </tr>
+      <tr>
+        <td><strong>年計反映</strong></td>
+        <td>任意</td>
+        <td>チェックを入れると、年間計画の表示対象になります。<br>チェックを入れると開始・終了時間の入力欄が非表示になります。</td>
+      </tr>
+      <tr>
+        <td><strong>保護者向けにする</strong></td>
+        <td>任意</td>
+        <td>チェックを入れると、保護者向けの行事として区別されます。</td>
+      </tr>
+      <tr>
+        <td><strong>説明・備考</strong></td>
+        <td>任意</td>
+        <td>メモや補足情報を入力します。<br>ここに書いた内容は<strong>月別行事予定（月別ビュー）にも詳細情報として表示されます</strong>。<br>※ 年間ビューには表示されません。</td>
+      </tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>登録する</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      必要な項目を入力したら、<strong>「イベント登録」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      画面に「読み込み中」のくるくるマークが表示されます。少しお待ちください。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      緑色で <strong>「○○が正常に登録されました。」</strong> と表示されたら完了です。
+    </div>
+
+    <p>登録が完了すると、入力フォームは自動的にクリアされます。続けて別の行事を登録することもできます。</p>
+
+    <div class="tip">
+      登録すると、Eventsシートに自動で行が追加され、日付順に並べ替えられます。<br>
+      ID・作成日時・作成者も自動で入るので、入力する必要はありません。
+    </div>
+
+    <div class="note">
+      赤色でエラーメッセージが出た場合は、必須項目が入力されているか確認してください。<br>
+      「通信エラーが発生しました」と出た場合は、もう一度やり直してみてください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>最近の登録・変更履歴を見る</h3>
+
+    <p>入力フォームの下に <strong>「最近の登録・変更履歴」</strong> という部分があります。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「▶ 最近の登録・変更履歴」</strong> の文字をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      最近登録・変更された行事の一覧が表示されます（最大10件）。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      各行事をクリックすると、登録者や日時などの詳細が表示されます。
+    </div>
+
+    <p>一覧の見かた：</p>
+    <table>
+      <tr><th>表示</th><th>意味</th></tr>
+      <tr>
+        <td><strong>緑色の「新規」</strong></td>
+        <td>新しく登録された行事です</td>
+      </tr>
+      <tr>
+        <td><strong>黄色の「変更」</strong></td>
+        <td>登録後に内容が変更された行事です</td>
+      </tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>文字サイズの変更</h3>
+
+    <p>サイドバーの右上にある <strong>「＋」「−」ボタン</strong> で、文字の大きさを変えられます。</p>
+    <ul>
+      <li><strong>「＋」ボタン</strong> … 文字が大きくなります</li>
+      <li><strong>「−」ボタン</strong> … 文字が小さくなります</li>
+    </ul>
+
+    <!-- ============================================ -->
+    <h3>こんなときは？</h3>
+
+    <dl class="qa">
+      <dt>登録した内容を修正したい</dt>
+      <dd>Eventsシートを直接開いて、該当する行のセルを編集してください。</dd>
+
+      <dt>登録した行事を削除したい</dt>
+      <dd>Eventsシートを開いて、該当する行を右クリック →「行を削除」で消せます。</dd>
+
+      <dt>同じ日に複数の行事を登録したい</dt>
+      <dd>何回でも登録できます。同じ日付で別のイベント名を入力して登録してください。</dd>
+
+      <dt>「とうろくんメニュー」が表示されない</dt>
+      <dd>ページを再読み込み（ブラウザの更新ボタン）してみてください。初回は表示に数秒かかることがあります。</dd>
+    </dl>
+
+    <div class="page-nav">
+      <a href="setup.html">&larr; 前へ: 初期設定</a>
+      <a href="trip.html">次へ: 出張の登録 &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+</html>

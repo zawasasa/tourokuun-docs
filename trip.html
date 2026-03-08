@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>出張の登録 - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; 出張の登録</div>
+
+  <div class="content">
+    <h2>3. 出張の登録</h2>
+
+    <p>
+      この機能は、職員の出張をスプレッドシートに登録するためのものです。<br>
+      学校行事の登録と同じように、画面右側のサイドバーから入力できます。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>登録画面を開く</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      画面の一番上にある <strong>「とうろくんメニュー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      出てきたメニューの中から <strong>「出張登録サイドバー」</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      少し待つと、画面の右側に入力フォームが表示されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>入力する項目</h3>
+
+    <table>
+      <tr><th>項目</th><th>必須</th><th>説明</th></tr>
+      <tr>
+        <td><strong>イベント名</strong></td>
+        <td>必須</td>
+        <td>出張の名前を入力します。<br>例：「○○研修会」「教育委員会打合せ」</td>
+      </tr>
+      <tr>
+        <td><strong>名前</strong></td>
+        <td>必須</td>
+        <td>出張する職員を選びます（複数選択可）。<br>詳しくは下の「名前の選び方」をご覧ください。</td>
+      </tr>
+      <tr>
+        <td><strong>日付</strong></td>
+        <td>必須</td>
+        <td>出張の日付を選びます。カレンダーが表示されるので、日にちをクリックしてください。</td>
+      </tr>
+      <tr>
+        <td><strong>場所</strong></td>
+        <td>必須</td>
+        <td>出張先の場所を入力します。<br>例：「市役所」「○○小学校」</td>
+      </tr>
+      <tr>
+        <td><strong>開始時間</strong></td>
+        <td>任意</td>
+        <td>出張の開始時間を入力します。わからなければ空欄のままでOKです。</td>
+      </tr>
+      <tr>
+        <td><strong>終了時間</strong></td>
+        <td>任意</td>
+        <td>出張の終了時間を入力します。わからなければ空欄のままでOKです。</td>
+      </tr>
+      <tr>
+        <td><strong>終日出張</strong></td>
+        <td>任意</td>
+        <td>チェックを入れると、丸一日の出張として記録されます。</td>
+      </tr>
+      <tr>
+        <td><strong>説明・備考</strong></td>
+        <td>任意</td>
+        <td>メモや補足情報を入力します。</td>
+      </tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>名前の選び方（複数人の出張）</h3>
+
+    <p>
+      出張する職員は、一人だけでなく複数人を選ぶこともできます。<br>
+      同じ研修会に複数人で出張する場合などに便利です。
+    </p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      「名前」のリストから、出張する職員の名前をクリックして選びます。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      選んだ方の名前が、リストの下に「タグ」として表示されます。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      もう一人追加したい場合は、もう一度リストから別の名前を選びます。
+    </div>
+    <div class="step">
+      <span class="step-number">4</span>
+      間違えて選んでしまった場合は、名前の横にある <strong>「×」</strong> をクリックすると取り消せます。
+    </div>
+
+    <div class="tip">
+      名前のリストは、staffシート（職員のシート）のA列に入力されている職員が自動で表示されます。<br>
+      新しい職員を追加したい場合は、staffシートのA列に名前を追加してください。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>登録する</h3>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      必要な項目を入力したら、<strong>「出張登録」ボタン</strong> をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      画面に「出張登録中」のくるくるマークが表示されます。少しお待ちください。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      緑色で <strong>「○○が正常に登録されました。」</strong> と表示されたら完了です。
+    </div>
+
+    <p>登録が完了すると、入力フォームは自動的にクリアされます。続けて別の出張を登録することもできます。</p>
+
+    <div class="tip">
+      登録すると、tripシートに自動で行が追加され、日付順に並べ替えられます。<br>
+      また、今日登録・変更したデータは <strong>赤い文字</strong> で表示されるので、「今日作業したデータ」がすぐにわかります。
+      翌日になると自動的に通常の黒い文字に戻ります。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>最近の登録・変更履歴を見る</h3>
+
+    <p>学校行事の登録画面と同じように、最近の履歴を確認できます。</p>
+
+    <div class="step">
+      <span class="step-number">1</span>
+      <strong>「▶ 最近の登録・変更履歴」</strong> の文字をクリックします。
+    </div>
+    <div class="step">
+      <span class="step-number">2</span>
+      最近登録・変更された出張の一覧が表示されます（最大10件）。
+    </div>
+    <div class="step">
+      <span class="step-number">3</span>
+      各出張をクリックすると、登録者や日時などの詳細が表示されます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>こんなときは？</h3>
+
+    <dl class="qa">
+      <dt>登録した内容を修正したい</dt>
+      <dd>tripシートを直接開いて、該当する行のセルを編集してください。</dd>
+
+      <dt>登録した出張を削除したい</dt>
+      <dd>tripシートを開いて、該当する行を右クリック →「行を削除」で消せます。</dd>
+
+      <dt>名前のリストに職員が表示されない</dt>
+      <dd>staffシートのA列（在籍職員入力欄）にその方の名前が入っているか確認してください。</dd>
+
+      <dt>複数人で出張したことをまとめて登録したい</dt>
+      <dd>「名前」の選択で複数人を選んでから登録すると、選んだ全員分がまとめて記録されます。</dd>
+    </dl>
+
+    <div class="page-nav">
+      <a href="event.html">&larr; 前へ: 学校行事の登録</a>
+      <a href="duty.html">次へ: 日直の割り振り &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>はじめに</h2>
+    <p>
+      この手順書は、<strong>「とうろくん」</strong>の使い方をまとめたものです。<br>
+      学校行事の登録・出張の登録・日直の割り振りなど、日々の業務で使う機能について、
+      操作の手順をひとつずつ説明しています。
+    </p>
+
+    <p>「とうろくん」には <strong>2つの使い方</strong> があります。お使いの方法に合わせて、下のタブを選んでください。</p>
+
+    <!-- 2つの版の紹介ボックス -->
+    <div class="version-intro">
+      <div class="version-intro-box vi-ss">
+        <div class="vi-icon">📊</div>
+        <div class="vi-title">スプレッドシート版</div>
+        <div class="vi-desc">
+          Googleスプレッドシートを直接開いて使います。<br>
+          データ登録・日直割り振り・CSV管理など<br>
+          <strong>すべての機能</strong>が使えます。
+        </div>
+      </div>
+      <div class="version-intro-box vi-web">
+        <div class="vi-icon">🌐</div>
+        <div class="vi-title">Webアプリ版</div>
+        <div class="vi-desc">
+          専用のURLをブラウザで開いて使います。<br>
+          予定の確認・行事の登録など<br>
+          <strong>日常的な閲覧・入力</strong>に向いています。
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== タブ ========== -->
+    <div class="version-tabs">
+      <div class="version-tab tab-ss active" onclick="switchTab('ss')">
+        <span class="tab-icon">📊</span>
+        スプレッドシート版
+        <span class="tab-sub">管理者・全機能</span>
+      </div>
+      <div class="version-tab tab-web" onclick="switchTab('web')">
+        <span class="tab-icon">🌐</span>
+        Webアプリ版
+        <span class="tab-sub">日常の閲覧・入力</span>
+      </div>
+    </div>
+
+    <!-- ========== スプレッドシート版コンテンツ ========== -->
+    <div class="tab-content tab-ss-content active" id="tabSS">
+      <div class="tab-heading">スプレッドシート版の操作手順書</div>
+      <div class="tab-heading-desc">Googleスプレッドシートを開き、「とうろくんメニュー」から操作します。</div>
+
+      <div class="card-grid">
+        <a href="setup.html" class="card">
+          <div class="card-number">1</div>
+          <div class="card-title">初期設定・シートの見かた</div>
+          <div class="card-desc">スプレッドシートの開き方、シート構成、初めに行う設定について</div>
+        </a>
+        <a href="event.html" class="card">
+          <div class="card-number">2</div>
+          <div class="card-title">学校行事の登録</div>
+          <div class="card-desc">サイドバーから学校行事を登録する手順と、各項目の説明</div>
+        </a>
+        <a href="trip.html" class="card">
+          <div class="card-number">3</div>
+          <div class="card-title">出張の登録</div>
+          <div class="card-desc">サイドバーから出張を登録する手順と、各項目の説明</div>
+        </a>
+        <a href="duty.html" class="card">
+          <div class="card-number">4</div>
+          <div class="card-title">日直の割り振り</div>
+          <div class="card-desc">職員の日直当番を自動で順番に割り振る機能の使い方</div>
+        </a>
+        <a href="csv.html" class="card">
+          <div class="card-number">5</div>
+          <div class="card-title">CSVデータの書き出し・読み込み</div>
+          <div class="card-desc">データをCSVファイルで書き出したり、読み込んだりする方法</div>
+        </a>
+        <a href="other.html" class="card">
+          <div class="card-number">6</div>
+          <div class="card-title">その他の便利な機能</div>
+          <div class="card-desc">並べ替え、ID自動割り当て、ヘルプファイルの生成など</div>
+        </a>
+      </div>
+
+      <h3 style="border-left-color: #2e7d32;">メニュー一覧</h3>
+      <p>画面上部の<strong>「とうろくんメニュー」</strong>をクリックすると、以下の機能が使えます。</p>
+      <table>
+        <tr>
+          <th>メニュー項目</th>
+          <th>できること</th>
+          <th>手順書</th>
+        </tr>
+        <tr>
+          <td>イベント登録サイドバー</td>
+          <td>学校行事を登録する</td>
+          <td><a href="event.html">2. 学校行事の登録</a></td>
+        </tr>
+        <tr>
+          <td>出張登録サイドバー</td>
+          <td>出張を登録する</td>
+          <td><a href="trip.html">3. 出張の登録</a></td>
+        </tr>
+        <tr>
+          <td>日直割り振りサイドバー</td>
+          <td>日直の割り振りをする</td>
+          <td><a href="duty.html">4. 日直の割り振り</a></td>
+        </tr>
+        <tr>
+          <td>イベントCSV管理</td>
+          <td>行事データの書き出し・読み込み</td>
+          <td><a href="csv.html">5. CSV管理</a></td>
+        </tr>
+        <tr>
+          <td>出張CSV管理</td>
+          <td>出張データの書き出し・読み込み</td>
+          <td><a href="csv.html">5. CSV管理</a></td>
+        </tr>
+        <tr>
+          <td>ヘルプファイル生成</td>
+          <td>CSVの使い方ファイルを作成</td>
+          <td><a href="other.html">6. その他</a></td>
+        </tr>
+        <tr>
+          <td>イベントを日付順に並べ替え</td>
+          <td>行事データを日付順に整理</td>
+          <td><a href="other.html">6. その他</a></td>
+        </tr>
+        <tr>
+          <td>出張を日付順に並べ替え</td>
+          <td>出張データを日付順に整理</td>
+          <td><a href="other.html">6. その他</a></td>
+        </tr>
+        <tr>
+          <td>未設定IDの自動割り当て</td>
+          <td>IDが空の行にIDを入れる</td>
+          <td><a href="other.html">6. その他</a></td>
+        </tr>
+        <tr>
+          <td>スプレッドシート初期化</td>
+          <td>シートを作り直す</td>
+          <td><a href="setup.html">1. 初期設定</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ========== Webアプリ版コンテンツ ========== -->
+    <div class="tab-content tab-web-content" id="tabWeb">
+      <div class="tab-heading">Webアプリ版の操作手順書</div>
+      <div class="tab-heading-desc">専用のURLをブラウザで開いて使います。スマホやタブレットでも利用できます。</div>
+
+      <!-- スクリーンショット表示エリア -->
+      <div style="text-align: center; margin: 24px 0;">
+        <img src="img/webapp_preview.png" alt="とうろくん Webアプリ版の直感的な画面"
+          style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="font-size: 13px; color: #666; margin-top: 8px;">Webアプリ版の画面イメージ（機能により5つの表示モードを切り替え可能）</p>
+      </div>
+
+      <div class="card-grid">
+        <a href="webapp.html" class="card">
+          <div class="card-number">7</div>
+          <div class="card-title">Webアプリの開き方と基本操作</div>
+          <div class="card-desc">URLの開き方、画面の見かた、スプレッドシート版との違い</div>
+        </a>
+        <a href="webapp-views.html" class="card">
+          <div class="card-number">8</div>
+          <div class="card-title">5つの表示モード</div>
+          <div class="card-desc">日・年間・月別・カレンダー・リストの各ビューの見かたと使い分け</div>
+        </a>
+        <a href="webapp-manage.html" class="card">
+          <div class="card-number">9</div>
+          <div class="card-title">行事・出張の登録と編集</div>
+          <div class="card-desc">Webアプリから行事や出張を登録・編集・削除する方法</div>
+        </a>
+      </div>
+
+      <h3 style="border-left-color: #1565c0;">Webアプリでできること</h3>
+      <table>
+        <tr>
+          <th>機能</th>
+          <th>説明</th>
+          <th>手順書</th>
+        </tr>
+        <tr>
+          <td>予定の確認</td>
+          <td>5つの表示モードで行事・出張・日直をまとめて確認</td>
+          <td><a href="webapp-views.html">8. 表示モード</a></td>
+        </tr>
+        <tr>
+          <td>学校行事の登録</td>
+          <td>「新規イベント登録」ボタンから行事を追加</td>
+          <td><a href="webapp-manage.html">9. 登録と編集</a></td>
+        </tr>
+        <tr>
+          <td>出張の登録</td>
+          <td>「新規出張登録」ボタンから出張を追加</td>
+          <td><a href="webapp-manage.html">9. 登録と編集</a></td>
+        </tr>
+        <tr>
+          <td>行事の編集・削除</td>
+          <td>予定をクリック→「編集」「削除」で変更や削除</td>
+          <td><a href="webapp-manage.html">9. 登録と編集</a></td>
+        </tr>
+        <tr>
+          <td>出張の編集・削除</td>
+          <td>出張をクリック→「編集」「削除」で変更や削除</td>
+          <td><a href="webapp-manage.html">9. 登録と編集</a></td>
+        </tr>
+        <tr>
+          <td>ドラッグで日付変更</td>
+          <td>カレンダー上で行事を移動</td>
+          <td><a href="webapp-views.html">8. 表示モード</a></td>
+        </tr>
+        <tr>
+          <td>資料リンク</td>
+          <td>Googleドライブの資料を行事にリンク</td>
+          <td><a href="webapp-manage.html">9. 登録と編集</a></td>
+        </tr>
+      </table>
+
+      <div
+        style="background:#e3f2fd; border-left:4px solid #1565c0; padding:12px 16px; margin:16px 0; border-radius:0 6px 6px 0; font-size:15px;">
+        <strong style="color:#1565c0;">ポイント:</strong>
+        日直の割り振りやCSV管理など、一部の管理機能はWebアプリ版では使えません。<br>
+        それらの操作が必要な場合は、スプレッドシート版をお使いください。
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+
+  <script>
+    function switchTab(type) {
+      // タブボタン
+      document.querySelector('.tab-ss').classList.toggle('active', type === 'ss');
+      document.querySelector('.tab-web').classList.toggle('active', type === 'web');
+      // タブコンテンツ
+      document.getElementById('tabSS').classList.toggle('active', type === 'ss');
+      document.getElementById('tabWeb').classList.toggle('active', type === 'web');
+    }
+  </script>
+</body>
+
+</html>

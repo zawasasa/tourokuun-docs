@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5つの表示モード - とうろくん 操作手順書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-web">
+  <div class="header">
+    <div class="header-inner">
+      <h1><a href="index.html">とうろくん 操作手順書</a></h1>
+      <nav class="header-nav">
+        <a href="index.html">目次に戻る</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">目次</a> &gt; 5つの表示モード</div>
+
+  <div class="content">
+    <h2>8. 5つの表示モード</h2>
+
+    <p>
+      Webアプリでは、予定の見かたを5つのモードから選べます。<br>
+      画面上部のボタンをクリックすると、表示が切り替わります。
+    </p>
+
+    <!-- ============================================ -->
+    <h3>「日」ビュー（デイリービュー）</h3>
+
+    <p>
+      <strong>選んだ1日の詳しい情報</strong>をまとめて見ることができます。<br>
+      アプリを開いたとき、最初に表示されるのがこのビューです。
+    </p>
+
+    <div class="img-container">
+      <img src="img/webapp_daily.png" alt="日別ビューの画面イメージ">
+      <p class="img-caption">日別ビュー：その日の行事、出張、下校時刻、授業時数などが一目でわかります</p>
+    </div>
+
+    <p>画面に表示される情報：</p>
+
+    <table>
+      <tr>
+        <th>表示される内容</th>
+        <th>説明</th>
+      </tr>
+      <tr>
+        <td><strong>今日の日付</strong></td>
+        <td>画面上部に「○年○月○日（○曜日）」と大きく表示されます。<br>左右の矢印で前の日・次の日に移動できます。</td>
+      </tr>
+      <tr>
+        <td><strong>給食</strong></td>
+        <td>給食がある日は 🍽️ マーク、ない日は 🚫 マークが表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>委員会・クラブ</strong></td>
+        <td>その日に委員会やクラブがある場合、マークが表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>朝の行事・午後の行事</strong></td>
+        <td>マスターシートに朝・午後の行事が登録されていれば表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>学校行事</strong></td>
+        <td>その日に登録されている行事が、カード形式で表示されます。<br>クリックすると詳細が見られます。</td>
+      </tr>
+      <tr>
+        <td><strong>出張</strong></td>
+        <td>その日に登録されている出張が表示されます。<br>出張者の名前・場所・時間がわかります。</td>
+      </tr>
+      <tr>
+        <td><strong>下校時刻</strong></td>
+        <td>1年生〜6年生の下校時刻が表で表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>授業時間数</strong></td>
+        <td>1年生〜6年生の授業時間数が表で表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>日直</strong></td>
+        <td>その日の日直担当者の名前が表示されます。</td>
+      </tr>
+    </table>
+
+    <div class="tip">
+      「日」ビューは、朝の打ち合わせなどで <strong>「今日の予定をまとめて確認」</strong> するのに便利です。
+    </div>
+
+    <p>行事や出張のカードに表示されるマークの意味：</p>
+    <table>
+      <tr>
+        <th>マーク</th>
+        <th>意味</th>
+      </tr>
+      <tr>
+        <td>📅</td>
+        <td>通常の学校行事です</td>
+      </tr>
+      <tr>
+        <td>👨‍👩‍👧‍👦</td>
+        <td>保護者向けの行事です（カードがピンク色になります）</td>
+      </tr>
+      <tr>
+        <td>✈️</td>
+        <td>出張です</td>
+      </tr>
+      <tr>
+        <td>📎</td>
+        <td>資料（Googleドライブのファイル）がリンクされています。クリックで開けます。</td>
+      </tr>
+    </table>
+
+    <!-- ============================================ -->
+    <h3>「年間」ビュー</h3>
+
+    <p>
+      <strong>4月〜翌年3月までの1年分</strong>を、一覧で見ることができます。<br>
+      年間の予定を俯瞰して確認したいときに便利です。
+    </p>
+
+    <div class="img-container">
+      <img src="img/webapp_annual.png" alt="年間ビューの画面イメージ">
+      <p class="img-caption">年間ビュー：年度全体の流れを確認するのに最適です</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>表示される内容</th>
+        <th>説明</th>
+      </tr>
+      <tr>
+        <td><strong>12か月分の一覧</strong></td>
+        <td>4月〜9月と10月〜3月の2段で表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>各日の行事名</strong></td>
+        <td>日付の横に、その日の行事名が表示されます。<br><strong>「年計反映」にチェックが入っている行事のみ</strong>表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>祝日・休日</strong></td>
+        <td>マスターシートに登録されている休日が色分けで表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>今日の日付</strong></td>
+        <td>今日の日付は目立つ色で強調されます。</td>
+      </tr>
+    </table>
+
+    <div class="note">
+      年間ビューでは日付の移動ボタンは表示されません。常に現在の年度全体が表示されます。<br>
+      行事の「説明・備考」に入力した内容は、年間ビューには表示されません（月別ビューで確認できます）。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>「月別」ビュー</h3>
+
+    <p>
+      <strong>1か月分の予定を表形式</strong>で見ることができます。<br>
+      日付・曜日・行事が一行ずつ並ぶので、月の流れがわかりやすいです。
+    </p>
+
+    <div class="img-container">
+      <img src="img/webapp_monthly.png" alt="月別ビューの画面イメージ">
+      <p class="img-caption">月別ビュー：学校の行事予定表（月行事）に近い形式です</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>列</th>
+        <th>内容</th>
+      </tr>
+      <tr>
+        <td><strong>日付</strong></td>
+        <td>日にちと曜日が表示されます</td>
+      </tr>
+      <tr>
+        <td><strong>行事</strong></td>
+        <td>その日の学校行事が表示されます</td>
+      </tr>
+      <tr>
+        <td><strong>詳細</strong></td>
+        <td>行事の「説明・備考」に入力した内容が表示されます。<br>年間ビューには表示されない補足情報を、月別ビューで確認できます。</td>
+      </tr>
+      <tr>
+        <td><strong>出張</strong></td>
+        <td>その日の出張が表示されます</td>
+      </tr>
+      <tr>
+        <td><strong>日直</strong></td>
+        <td>その日の日直担当者が表示されます</td>
+      </tr>
+    </table>
+
+    <p>左右の矢印で前の月・次の月に移動できます。「今日」ボタンで今月に戻れます。</p>
+
+    <div class="tip">
+      月別ビューは、<strong>月の行事予定表として印刷</strong>するのにも使えます。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>「カレンダー」ビュー</h3>
+
+    <p>
+      <strong>壁掛けカレンダーのようなカレンダー形式</strong>で予定を見ることができます。<br>
+      月曜日〜日曜日の列で、1か月分が格子状に表示されます。
+    </p>
+
+    <div class="img-container">
+      <img src="img/webapp_calendar.png" alt="カレンダービューの画面イメージ">
+      <p class="img-caption">カレンダービュー：視覚的に日程を把握しやすく、ドラッグでの移動も可能です</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>表示される内容</th>
+        <th>説明</th>
+      </tr>
+      <tr>
+        <td><strong>各日のマス</strong></td>
+        <td>日にちと、その日の行事名が表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>祝日・休日</strong></td>
+        <td>休日は色が変わって表示されます。</td>
+      </tr>
+      <tr>
+        <td><strong>今日の日付</strong></td>
+        <td>今日のマスは目立つ色で強調されます。</td>
+      </tr>
+    </table>
+
+    <p>左右の矢印で前の月・次の月に移動できます。</p>
+
+    <div class="tip">
+      カレンダービューでは、行事をドラッグ&ドロップ（マウスで掴んで移動）して、<strong>別の日に移動</strong>させることもできます。<br>
+      行事の日程変更を手軽に行いたいときに便利です。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>「リスト」ビュー</h3>
+
+    <p>
+      登録されている<strong>すべての行事と出張を一覧表示</strong>します。<br>
+      過去から未来まで、日付順にまとめて確認できます。
+    </p>
+
+    <div class="img-container">
+      <img src="img/webapp_list.png" alt="リストビューの画面イメージ">
+      <p class="img-caption">リストビュー：全ての登録データから目的の予定を素早く探せます</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>セクション</th>
+        <th>内容</th>
+      </tr>
+      <tr>
+        <td><strong>行事一覧</strong></td>
+        <td>すべての学校行事が日付順に並びます</td>
+      </tr>
+      <tr>
+        <td><strong>出張一覧</strong></td>
+        <td>すべての出張が日付順に並びます</td>
+      </tr>
+    </table>
+
+    <p>各予定の横に表示されるマークの意味：</p>
+    <table>
+      <tr>
+        <th>マーク</th>
+        <th>意味</th>
+      </tr>
+      <tr>
+        <td>🎯</td>
+        <td>今日の予定です</td>
+      </tr>
+      <tr>
+        <td>📅</td>
+        <td>今後の予定です</td>
+      </tr>
+      <tr>
+        <td>📆</td>
+        <td>過去の予定です</td>
+      </tr>
+    </table>
+
+    <div class="tip">
+      予定をクリックすると詳細が見られます。リストビューは、過去の履歴も含めて<strong>全体を俯瞰</strong>したいときに便利です。
+    </div>
+
+    <!-- ============================================ -->
+    <h3>表示モードの使い分け</h3>
+
+    <table>
+      <tr>
+        <th>やりたいこと</th>
+        <th>おすすめのモード</th>
+      </tr>
+      <tr>
+        <td>今日の予定をまとめて確認したい</td>
+        <td><strong>「日」ビュー</strong></td>
+      </tr>
+      <tr>
+        <td>来月の予定を確認したい</td>
+        <td><strong>「月別」ビュー</strong></td>
+      </tr>
+      <tr>
+        <td>年間の予定をざっと見たい</td>
+        <td><strong>「年間」ビュー</strong></td>
+      </tr>
+      <tr>
+        <td>カレンダーで曜日と一緒に見たい</td>
+        <td><strong>「カレンダー」ビュー</strong></td>
+      </tr>
+      <tr>
+        <td>全ての予定から探したい</td>
+        <td><strong>「リスト」ビュー</strong></td>
+      </tr>
+      <tr>
+        <td>行事の日にちを変更したい</td>
+        <td><strong>「カレンダー」ビュー</strong>（ドラッグ&ドロップ）</td>
+      </tr>
+    </table>
+
+    <div class="page-nav">
+      <a href="webapp.html">&larr; 前へ: Webアプリの基本操作</a>
+      <a href="webapp-manage.html">次へ: 行事・出張の登録と編集 &rarr;</a>
+    </div>
+  </div>
+
+  <div class="footer">とうろくん 操作手順書</div>
+</body>
+
+</html>

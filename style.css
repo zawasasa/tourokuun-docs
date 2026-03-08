@@ -465,6 +465,28 @@ body.theme-web {
   background: #bbdefb;
 }
 
+/* 画像 */
+.img-container {
+  text-align: center;
+  margin: 24px 0;
+}
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.img-caption {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* フッター */
 .footer {
   text-align: center;
